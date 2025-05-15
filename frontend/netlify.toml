@@ -1,22 +1,2 @@
 [build]
-  # Directorio donde está tu código frontend
-  publish = "/"
-  
-  # Comando para construir tu aplicación
-  command = "npm install && npm run build"
-  
-  # Directorio de funciones serverless
   functions = "netlify/functions"
-
-[functions]
-  # Directorio donde están tus funciones de Netlify
-  directory = "netlify/functions"
-
-[build.environment]
-  # Versión de Node.js
-  NODE_VERSION = "18"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
