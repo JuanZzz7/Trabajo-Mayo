@@ -21,7 +21,7 @@ function guardar(){
       redirect: "follow"
     };
  
-    fetch("https://softwareseguro.netlify.app/.netlify/functions/guardar", requestOptions)
+    fetch("https://softwareseguro.netlify.app/.netlify/functions", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.error(error));
@@ -48,7 +48,7 @@ function listar(){
     let ndoc = document.getElementById("numdoc").value;
     //usuarios?id=user124
          //https://proyectofinaldsws.netlify.app/.netlify/functions/usuarios
-    fetch("https://softwareseguro.netlify.app/.netlify/functions/obtener/"+ndoc, requestOptions)
+    fetch("https://softwareseguro.netlify.app/.netlify/functions"+ndoc, requestOptions)
       .then((response) =>
         response.text())
       .then((result) =>
