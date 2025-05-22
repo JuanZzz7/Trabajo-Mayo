@@ -21,7 +21,7 @@ function guardar(){
       redirect: "follow"
     };
  
-    fetch("https://otraappp.netlify.app/netlify/funtions/usuarios", requestOptions)
+    fetch("https://otraappp.netlify.app/.netlify/funtions/usuarios", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.error(error));
