@@ -21,7 +21,7 @@ function guardar(){
       redirect: "follow"
     };
  
-    fetch("https://trabajods.netlify.app/.netlify/funtions/usuarios/usuarios", requestOptions)
+    fetch("https://trabajods.netlify.app/.netlify/funtions/usuarios", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.error(error));
@@ -48,7 +48,7 @@ function listar(){
     let ndoc = document.getElementById("numdoc").value;
     //usuarios?id=user124
          //https://proyectofinaldsws.netlify.app/.netlify/functions/usuarios
-    fetch("https://trabajods.netlify.app/.netlify/funtions/usuarios/usuarios"+ndoc, requestOptions)
+    fetch("https://trabajods.netlify.app/.netlify/funtions/usuarios"+ndoc, requestOptions)
       .then((response) =>
         response.text())
       .then((result) =>
